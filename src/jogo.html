@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/styles.scss">
+
+    <title>Bingo!</title>
+</head>
+<body>
+    <section class="bg-light d-flex flex-column align-items-center pt-5 px-5">
+        <div>
+            <div class="mb-2">
+                <h1 class="text-center display-1 fw-bolder">Bingo!</h1>
+                <h2 id="nome" class="text-center"></h2>
+            </div>
+        </div>
+        <div class="container d-flex flex-row flex-wrap align-items-center mt-1 px-auto w-75">
+            <button class="btn btn-primary mt-2 w-100 h-75" id="sortear">Sortear</button>
+            <button class="btn btn-primary mt-2 w-100 h-75">Números sorteados</button>   
+        </div>
+    </section>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/jogo.js"></script>
+    <script>
+        // Recupera o valor do localStorage
+        const nomeBingo = localStorage.getItem('nomeBingo');
+
+        // Adiciona o texto abaixo do h1
+        document.getElementById('nome').textContent = nomeBingo || 'Nome não informado';
+    </script>
+</body>
+</html>
