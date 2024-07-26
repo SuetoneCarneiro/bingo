@@ -1,15 +1,63 @@
 <!doctype html>
-<html lang="en">
-  <head>
+<html lang="pt-br">
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Vite</title>
-  </head>
-  <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
-    </div>
+    <link rel="stylesheet" href="./scss/styles.scss">
+    <title>Bingo!</title>
+    
+</head>
+
+<body class="bg-black">
+    
+    <section class="bg-light d-flex flex-column align-items-center pt-5 px-5">
+        <div>
+            <div class="mb-2">
+                <h1 class="text-center display-1 fw-bolder">Bingo!</h1>
+                <p class="text-center display-6">Divirta-se com seus amigos jogando bingo!</p>
+            </div>
+        </div>
+
+        <div class="container d-flex flex-row flex-wrap align-items-center mt-1 px-auto w-75">
+            <label for="nome-bingo" class="fs-2">Nome do bingo: </label>
+            <input class="input-nome-bingo" type="text" id="nome-bingo" name="nome-bingo" placeholder="Escolha um nome para o seu bingo" />
+            <button class="btn btn-primary mt-2 w-100">Jogar</button>
+            <button class="btn btn-primary mt-2 w-100" id="instrucoes">Instruções</button>   
+        </div>   
+        </section> 
+
+        <footer class="bg-dark text-white py-2">
+            <div class="container text-center">
+                <div class="d-flex justify-content-center">
+                    <a href="https://linkedin.com" class="text-white mx-2" target="_blank">
+                        <i class="bi bi-linkedin" style="color: #0082ca;"></i>
+                    </a>
+                    <a href="https://github.com" class="text-white mx-2" target="_blank">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://instagram.com" class="text-white mx-2" target="_blank">
+                        <i class="bi bi-instagram" style="color: #fd1293;"></i>
+                    </a>
+                </div>
+                <p class="mb-2 mt-2">© 2024 Suetone Carneiro. All rights reserved.</p>
+            </div>
+        </footer>
+        <dialog>
+            <h2>Informações sobre o bingo</h2>
+            <hr>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Os números serão sorteados de 1 até 90;</li>
+                <li class="list-group-item">Durante o jogo, você pode consultar quais números já foram chamados;</li>
+                <li class="list-group-item">Na tela sempre haverá o último número chamado, além de um novo sorteado;</li>
+                <li class="list-group-item">Divirta-se!</li>
+            </ul>
+            
+            <button class="btn btn-primary mt-3">Ok</button>
+        </dialog>
+        
+        
     <script type="module" src="./js/main.js"></script>
-  </body>
+</body>
+
 </html>
