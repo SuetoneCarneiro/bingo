@@ -15,19 +15,23 @@
                 <h2 id="nome" class="text-center"></h2>
             </div>
         </div>
+        <h1 id="numero-sorteado"></h1>
         <div class="container d-flex flex-row flex-wrap align-items-center mt-1 px-auto w-75">
-            <button class="btn btn-primary mt-2 w-100 h-75" id="sortear">Sortear</button>
-            <button class="btn btn-primary mt-2 w-100 h-75">Números sorteados</button>   
+            <button class="btn btn-primary mt-2 w-100 h-75" id="sortear" onclick="sorteio()">Sortear</button>
+            <button class="btn btn-primary mt-2 w-100 h-75" id="checar" onclick="teste()">Números sorteados</button>   
         </div>
     </section>
-    <script type="module" src="./js/main.js"></script>
-    <script type="module" src="./js/jogo.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/jogo.js"></script>
     <script>
+        
         // Recupera o valor do localStorage
         const nomeBingo = localStorage.getItem('nomeBingo');
 
         // Adiciona o texto abaixo do h1
-        document.getElementById('nome').textContent = nomeBingo || 'Nome não informado';
+        document.getElementById('nome').textContent = nomeBingo || 'Bingo sem nome';
+
+        
     </script>
 </body>
 </html>
