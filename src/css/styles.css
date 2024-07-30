@@ -1,6 +1,3 @@
-// Import all of Bootstrap's CSS
-@import "~bootstrap/scss/bootstrap";
-
 .input-nome-bingo{
     width: 100%;
     height: 6vh;
