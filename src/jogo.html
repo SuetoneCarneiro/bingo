@@ -16,16 +16,43 @@
             </div>
         </div>
         <h1 id="numero-sorteado"></h1>
+        <h3 id="numero-anterior"></h3>
         <div class="container d-flex flex-row flex-wrap align-items-center mt-1 px-auto w-75">
             <button class="btn btn-primary mt-2 w-100 h-75" id="sortear" onclick="sorteio()">Sortear</button>
-            <button class="btn btn-primary mt-2 w-100 h-75" id="checar" onclick="teste()">Números sorteados</button>   
+            <button class="btn btn-primary mt-2 w-100 h-75" id="checar" onclick="showNumbers()">Números sorteados</button>   
         </div>
     </section>
+
+    <footer class="bg-dark text-white py-2">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center">
+                <a href="https://linkedin.com" class="text-white mx-2" target="_blank">
+                    <i class="bi bi-linkedin" style="color: #0082ca;"></i>
+                </a>
+                <a href="https://github.com" class="text-white mx-2" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://instagram.com" class="text-white mx-2" target="_blank">
+                    <i class="bi bi-instagram" style="color: #fd1293;"></i>
+                </a>
+            </div>
+            <p class="mb-2 mt-2">© 2024 Suetone Carneiro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <dialog class="pagina-sorteados flex">
+        <h1>Números Sorteados até o momento:</h1>
+        <hr>
+        <h3 id="lista-numeros"><h3>
+        <button class="btn btn-primary mt-3 botao-modal">Voltar</button>
+    </dialog>
+
     <script src="./js/main.js"></script>
     <script src="./js/jogo.js"></script>
     <script>
         // array para a guardar os números sorteados e evitar repetições
         let numerosSorteados = new Array();
+        let numeroSorteado = 0;
         // Recupera o valor do localStorage
         const nomeBingo = localStorage.getItem('nomeBingo');
 
