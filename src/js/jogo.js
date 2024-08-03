@@ -41,6 +41,8 @@ function showNumbers(){
     const modal = document.querySelector('.pagina-sorteados');
     const closeModal = document.querySelector('.botao-modal');
     const listaNumeros = document.querySelector('#lista-numeros');
+    const qtd = document.getElementById('qtd-numeros');
+
     modal.showModal();
     let show = '';
     numerosSorteados.map((number) => {
@@ -54,6 +56,8 @@ function showNumbers(){
     }).join('');
     
     listaNumeros.textContent = show;
+    if(numerosSorteados.length > 1)
+        qtd.textContent = (numerosSorteados.length - 1) + ' números foram sorteados até o momento... Guenta coração...'
     closeModal.addEventListener('click', function(){modal.close();})
     
 }
