@@ -1,0 +1,28 @@
+{
+  "name": "bingo",
+  "version": "1.0.0",
+  "description": "Bingo para jogar com amigos.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuetoneCarneiro/bingo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SuetoneCarneiro/bingo/issues"
+  },
+  "homepage": "https://github.com/SuetoneCarneiro/bingo#readme",
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.0"
+  }
+}
